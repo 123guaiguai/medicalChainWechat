@@ -1,0 +1,113 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">病例信息</view></cu-custom>
+<view class="cu-timeline">
+  <view class="cu-item text-blue">
+    <view class="bg-gradual-blue content shadow">
+      <view class="cu-capsule radius ">
+        <view class="cu-tag bg-white text-blue text-lg">2020/11/25 16:02</view>
+        <view class="cu-tag line-white text-lg">No：2018091618</view>
+      </view>
+      <view class="margin-top-sm text-content text-lg">
+        <view>医院：成都市第六人民医院</view>
+        <view>科室：心血管科室</view>
+        <view>医生：王建国</view>
+      </view>
+    </view>
+    <view class="flex">
+      <button class="cu-btn line-green lg shadow flex-sub">
+        <text class="cuIcon-down"></text> 下载</button>
+      <button class="cu-btn  line-blue lg shadow flex-sub">
+        <text class="cuIcon-searchlist"></text> 查看</button>
+      <button class="cu-btn  line-red lg shadow flex-sub">
+        <text class="cuIcon-roundclose"></text> 销毁</button>
+    </view>
+  </view>
+
+  <view class="cu-item text-blue">
+    <view class="bg-gradual-blue content shadow">
+      <view class="cu-capsule radius ">
+        <view class="cu-tag bg-white text-blue text-lg">2019/7/11 10:42</view>
+        <view class="cu-tag line-white text-lg">No：1013091014</view>
+      </view>
+      <view class="margin-top-sm text-content text-lg">
+        <view>医院：成都市第二人民医院</view>
+        <view>科室：皮肤科室</view>
+        <view>医生：张祥</view>
+      </view>
+    </view>
+    <view class="flex">
+      <button class="cu-btn line-green lg shadow flex-sub">
+        <text class="cuIcon-down"></text> 下载</button>
+      <button class="cu-btn  line-blue lg shadow flex-sub">
+        <text class="cuIcon-searchlist"></text> 查看</button>
+      <button class="cu-btn  line-red lg shadow flex-sub">
+        <text class="cuIcon-roundclose"></text> 销毁</button>
+    </view>
+  </view>
+
+  <view class="cu-item text-blue">
+    <view class="bg-gradual-blue content shadow">
+      <view class="cu-capsule radius ">
+        <view class="cu-tag bg-white text-blue text-lg">2019/04/02 14:33</view>
+        <view class="cu-tag line-white text-lg">No：2203052309</view>
+      </view>
+      <view class="margin-top-sm text-content text-lg">
+        <view>医院：四川大学华西医院</view>
+        <view>科室：消化内科室</view>
+        <view>医生：李湘兰</view>
+      </view>
+    </view>
+    <view class="flex">
+      <button class="cu-btn line-green lg shadow flex-sub">
+        <text class="cuIcon-down"></text> 下载</button>
+      <button class="cu-btn  line-blue lg shadow flex-sub">
+        <text class="cuIcon-searchlist"></text> 查看</button>
+      <button class="cu-btn  line-red lg shadow flex-sub">
+        <text class="cuIcon-roundclose"></text> 销毁</button>
+    </view>
+  </view>
+
+  <view class="cu-item text-blue">
+    <view class="bg-gradual-blue content shadow">
+      <view class="cu-capsule radius ">
+        <view class="cu-tag bg-white text-blue text-lg">2018/12/29 15:24</view>
+        <view class="cu-tag line-white text-lg">No：4370050313</view>
+      </view>
+      <view class="margin-top-sm text-content text-lg">
+        <view>医院：四川大学华西医院</view>
+        <view>科室：消化内科室</view>
+        <view>医生：李湘兰</view>
+      </view>
+    </view>
+    <view class="flex">
+      <button class="cu-btn line-green lg shadow flex-sub">
+        <text class="cuIcon-down"></text> 下载</button>
+      <button class="cu-btn  line-blue lg shadow flex-sub">
+        <text class="cuIcon-searchlist"></text> 查看</button>
+      <button class="cu-btn  line-red lg shadow flex-sub">
+        <text class="cuIcon-roundclose"></text> 销毁</button>
+    </view>
+  </view>
+
+  <view class="cu-item text-blue">
+    <view class="bg-gradual-blue content shadow">
+      <view class="cu-capsule radius ">
+        <view class="cu-tag bg-white text-blue text-lg">2018/06/30 09:09</view>
+        <view class="cu-tag line-white text-lg">No：1204056380</view>
+      </view>
+      <view class="margin-top-sm text-content text-lg">
+        <view>医院：四川大学华西医院</view>
+        <view>科室：消化内科室</view>
+        <view>医生：王润静</view>
+      </view>
+    </view>
+    <view class="flex">
+      <button class="cu-btn line-green lg shadow flex-sub">
+        <text class="cuIcon-down"></text> 下载</button>
+      <button class="cu-btn  line-blue lg shadow flex-sub">
+        <text class="cuIcon-searchlist"></text> 查看</button>
+      <button class="cu-btn  line-red lg shadow flex-sub">
+        <text class="cuIcon-roundclose"></text> 销毁</button>
+    </view>
+  </view>
+
+</view>

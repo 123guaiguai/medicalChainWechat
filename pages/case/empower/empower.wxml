@@ -1,0 +1,60 @@
+<scroll-view scroll-y="{{modalName==null}}" class="page {{modalName!=null?'show':''}}">
+  <cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+    <view slot="backText">返回</view>
+    <view slot="content">授权请求</view>
+  </cu-custom>
+
+  <view class="cu-bar search bg-white">
+    <view class="search-form round">
+      <text class="cuIcon-search"></text>
+      <input type="text" placeholder="请输入医生姓名或遍历编号查询" confirm-type="search"></input>
+    </view>
+    <view class="action">
+      <button class="cu-btn bg-cyan shadow-blur round">搜索</button>
+    </view>
+  </view>
+
+  <view class="cu-bar bg-white solid-bottom margin-top">
+    
+    <view class="action">
+      <text class="cuIcon-list text-blue "></text> 申请列表
+    </view>
+  </view>
+  <view class="cu-list menu-avatar">
+    <view class="cu-item {{modalName=='move-box-'+ index?'move-cur':''}}" wx:for="{{4}}" wx:key bindtouchstart="ListTouchStart" bindtouchmove="ListTouchMove" bindtouchend="ListTouchEnd" data-target="move-box-{{index}}">
+      <view class="cu-avatar round lg" style="background-image:url(https://z3.ax1x.com/2021/03/22/6T9Jtx.png);"></view>
+      <!-- <view class="content">
+            <view>
+              <view class="text-grey">王建国</view>
+              <view class="cu-tag round bg-grey sm">主治医师</view>
+            </view>
+            
+            <view class="text-gray text-sm flex">
+              <text class="text-cut">
+										<text class="text-cut"></text>科室：心血管科诊室 
+              </text>
+            </view> -->
+      <view class="content">
+        <view>
+          <view class="text-grey">王建国</view>
+          <view class="cu-tag round bg-grey sm">主治医师</view>
+        </view>
+        <view class="text-gray text-sm flex">
+          <text class="text-cut">
+						<text class="text-cut"></text>科室：心血管科诊室 
+          </text>
+        </view>
+        <view class="text-gray text-sm">
+          <text class="cuIcon-attention text-orange"></text> 申请病例编号：2018091618</view>
+      </view>
+      <view class="action">
+        <view class="text-grey text-xs">2021/02/11 20:20</view>
+        <!-- <view class="cu-tag round bg-grey sm">5</view> -->
+      </view>
+      <view class="move">
+        <view class="bg-green">同意授权</view>
+        <view class="bg-red">拒绝授权</view>
+      </view>
+    </view>
+  </view>
+</scroll-view>
