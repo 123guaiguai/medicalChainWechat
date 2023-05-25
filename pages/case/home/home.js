@@ -12,7 +12,7 @@ Component({
         url: '/empower/empower'
     },
       {
-        title: '病例操作',
+        title: '病历操作',
         img: 'https://z3.ax1x.com/2021/03/23/6Hnhbq.png',
         url: '/operation/operation'
       }

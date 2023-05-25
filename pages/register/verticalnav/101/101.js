@@ -7,18 +7,86 @@ Page({
     TabCur: 0,
     MainCur: 0,
     VerticalNavTop: 0,
-    list: [],
-    load: true
+    list: [{
+      day:'周一',
+      doctor: [{
+        name: '王建国',
+        ident: '主治医师',
+        department: '心血管科诊室',
+        num: '5',
+        hp: 'https://z3.ax1x.com/2021/03/22/6T9Jtx.png',
+      },{
+        name: '吴燕',
+        ident: '主任医师',
+        department: '心血管科诊室',
+        num: '3',
+        hp: 'https://z3.ax1x.com/2021/03/22/6T9Fmj.png',
+      }], 
+    },{
+      day:'周二',
+      doctor: [{
+        name: '王建国',
+        ident: '主治医师',
+        department: '心血管科诊室',
+        num: '25',
+        hp: 'https://z3.ax1x.com/2021/03/22/6T9Jtx.png',
+      }, {
+        name: '周琳',
+        ident: '副主任医师',
+        department: '心血管科诊室',
+        num: '11',
+        hp: 'https://z3.ax1x.com/2021/03/22/6oQVXR.png',
+      }], 
+    },{
+      day:'周三',
+      doctor: [{
+        name: '无相关医生排班',
+        hp: 'https://z3.ax1x.com/2021/03/31/cAJvrt.png',
+      }], 
+    },{
+      day:'周四',
+      doctor: [{
+        name: '无相关医生排班',
+        hp: 'https://z3.ax1x.com/2021/03/31/cAJvrt.png',
+      }], 
+    },{
+      day:'周五',
+      doctor: [{
+        name: '周琳',
+        ident: '副主任医师',
+        department: '心血管科诊室',
+        num: '13',
+        hp: 'https://z3.ax1x.com/2021/03/22/6oQVXR.png',
+      }, {
+        name: '吴燕',
+        ident: '主任医师',
+        department: '心血管科诊室',
+        num: '31',
+        hp: 'https://z3.ax1x.com/2021/03/22/6T9Fmj.png',
+      }], 
+    },{
+      day:'周六',
+      doctor: [{
+        name: '无相关医生排班',
+        hp: 'https://z3.ax1x.com/2021/03/31/cAJvrt.png',
+      }], 
+    },{
+      day:'周日',
+      doctor: [{
+        name: '无相关医生排班',
+        hp: 'https://z3.ax1x.com/2021/03/31/cAJvrt.png',
+      }], 
+    }],
+    load: true,
+    
   },
   onLoad() {
     wx.showLoading({
       title: '加载中...',
       mask: true
     });
-    let list = [{name:'周一'},{name:'周二'},{name:'周三'},{name:'周四'},{name:'周五'},{name:'周六'},{name:'周日'}];
+    let list = this.data.list;
     for (let i = 0; i < 7; i++) {
-      // list[i] = {};
-      // list[i].name = String.fromCharCode(65 + i);
       list[i].id = i;
     }
     this.setData({

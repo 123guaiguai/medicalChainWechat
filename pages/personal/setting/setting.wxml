@@ -1,0 +1,57 @@
+<scroll-view scroll-y="{{modalName==null}}" class="page {{modalName!=null?'show':''}}">
+  <cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+    <view slot="backText">返回</view>
+    <view slot="content">设置</view>
+  </cu-custom>
+  
+  <view class="cu-list menu sm-border card-menu margin-top ">
+
+    <view class="cu-item arrow">
+      <view class="content">
+        <text class="cuIcon-my text-blue"></text> 头像
+      </view>
+      <view class="content flex justify-end">
+        <image src="/images/new/tx.png" class="png" mode="aspectFit"></image>
+      </view>
+    </view>
+    
+    <view class="cu-item arrow">
+      <view class="content">
+        <text class="cuIcon-write text-blue"></text> 昵称
+      </view>
+      <view class="action">
+        <text class="text-grey text-lg">Stevin</text>
+      </view>
+    </view>
+
+    <view class="cu-item">
+      <view class="content">
+          <text class="cuIcon-weixin text-blue"></text> 新消息微信提醒</view>
+      <view class="action">
+        <switch class="switch-sound radius sm" bindchange="switchSound"></switch>
+      </view>
+    </view>
+
+    <view class="cu-item arrow">
+      <view class="content">
+        <text class="cuIcon-explorefill text-blue"></text> 授权管理
+      </view>
+    </view>
+
+    <view class="cu-item arrow">
+      <navigator class="content" hover-class="none" url="/pages/rfid/home/home" open-type="redirect">
+        <text class="cuIcon-commandfill text-blue"></text> 更多安全设置
+      </navigator>
+    </view>
+
+
+    <view class="cu-item arrow">
+      <button class="cu-btn content" open-type="contact">
+        <text class="cuIcon-commentfill text-blue"></text> 客服联系
+      </button>
+    </view>
+  
+
+  </view>
+  
+</scroll-view>

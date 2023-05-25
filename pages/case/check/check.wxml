@@ -1,0 +1,8 @@
+
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}"><view slot="backText">返回</view>
+  <view slot="content">病历详情查看</view>
+</cu-custom>
+
+<view>
+  <image src="https://z3.ax1x.com/2021/04/25/cxAXv9.jpg" mode='widthFix' class='response'></image>
+</view>

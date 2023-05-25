@@ -1,6 +1,20 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/case/empower/empower",
+    "pages/case/home/home",
+    "pages/case/operation/operation",
+    "pages/case/check/check",
+    "pages/personal/home/home",
+    "pages/personal/bionature/bionature",
+    "pages/personal/camera/camera",
+    "pages/personal/info/info",
+    "pages/personal/setting/setting",
+    "pages/register/home/home",
+    "pages/register/verticalnav/101/101",
+    "pages/register/verticalnav/detail/detail",
+    "pages/rfid/iris/iris",
+    "pages/rfid/home/home"
   ],
   "window": {
     "backgroundTextStyle": "light",

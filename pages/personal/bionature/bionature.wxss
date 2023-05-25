@@ -1,0 +1,7 @@
+page{
+  padding-top: 70rpx;
+}
+.size {
+  height: 200rpx;
+  width: 200rpx;
+}

@@ -1,0 +1,50 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">生物特征采集</view></cu-custom>
+<scroll-view scroll-x class="bg-white nav text-center fixed" style="top:{{CustomBar}}px">
+  <view class="cu-item {{index==TabCur?'text-blue cur':''}}" wx:for="{{tabNav}}" wx:key bindtap='tabSelect' data-id="{{index}}">
+    {{tabNav[index]}}
+  </view>
+</scroll-view>
+<block wx:if="{{TabCur==0}}">
+
+<view class="cu-card article">
+  <view class="cu-item shadow">
+		<view class="cu-bar bg-white  flex justify-center">
+			<text class="text-bold"> 点击下方进行人脸图像采集</text>
+		</view>
+    <!-- <view class="content flex justify-center" bindtap="ChooseImage">
+      <image src="/images/new/face.png" class="png size" mode="aspectFit"></image>
+		</view> -->
+	<navigator class="content flex justify-center" url="/pages/personal/camera/camera" hover-class="none">
+		<image src="/images/new/face.png" class="png size" mode="aspectFit"></image>
+	</navigator>
+  </view>
+</view>
+	<view class="">
+		<!-- <view class="grid col-4 grid-square flex-sub flex justify-center">
+			<view class="bg-img" wx:for="{{imgList}}" wx:key="{{index}}" bindtap="ViewImage" data-url="{{imgList[index]}}">
+				<image src='{{imgList[index]}}' mode='aspectFill'></image>
+				<view class="cu-tag bg-red" catchtap="DelImg" data-index="{{index}}">
+					<text class="cuIcon-close"></text>
+				</view>
+			</view>
+		</view> -->
+		
+
+	</view>
+  
+</block>
+<block wx:if="{{TabCur==1}}">
+  <view class="cu-card article">
+  <view class="cu-item shadow">
+		<view class="cu-bar bg-white  flex justify-center">
+			<text class="text-bold"> 点击下方进行虹膜图像采集</text>
+		</view>
+    <!-- <view class="content flex justify-center" bindtap="ChooseImage">
+      <image src="/images/new/eye.png" class="png size" mode="aspectFit"></image>
+		</view> -->
+		<navigator class="content flex justify-center" url="/pages/rfid/iris/iris" hover-class="none">
+		<image src="/images/new/eye.png" class="png size" mode="aspectFit"></image>
+	</navigator>
+  </view>
+</view>
+</block>

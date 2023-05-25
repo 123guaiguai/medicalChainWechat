@@ -1,8 +1,4 @@
 
-page {
-  padding-top: 140rpx;
-}
-
 .indexes {
   position: relative;
 }
@@ -160,4 +156,7 @@ movable-view.indexBar-item::before {
 }
 .icon_down_rotate{
   transform:rotate(180deg);
+}
+.cu-form-group .title {
+  min-width: calc(4em + 30rpx);
 }

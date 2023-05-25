@@ -1,15 +1,14 @@
 <case wx:if="{{PageCur=='case'}}"></case>
 <register wx:if="{{PageCur=='register'}}"></register>
 <personal wx:if="{{PageCur=='personal'}}"></personal>
-<cu-custom bgColor="bg-gradual-blue">
-  <view slot="content">电子病例系统</view>
-</cu-custom>
+<scroll-view scroll-y class="scrollPage">
+
 <view class="cu-bar tabbar bg-white shadow foot">
   <view class="action" bindtap="NavChange" data-cur="case">
     <view class='cuIcon-cu-image'>
       <image src="/images/tabbar/lsbl{{PageCur=='case'?'_cur':''}}.png"></image>
     </view>
-    <view class="{{PageCur=='case'?'text-blue':'text-gray'}}">历史病例</view>
+    <view class="{{PageCur=='case'?'text-blue':'text-gray'}}">历史病历</view>
   </view>
   <view class="action" bindtap="NavChange" data-cur="register">
     <view class='cuIcon-cu-image'>
@@ -24,3 +23,4 @@
     <view class="{{PageCur=='personal'?'text-blue':'text-gray'}}">个人中心</view>
  </view>
 </view>
+</scroll-view>

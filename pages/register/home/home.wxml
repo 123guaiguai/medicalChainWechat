@@ -1,3 +1,24 @@
+<scroll-view scroll-y class="scrollPage">
+    <cu-custom bgColor="bg-gradual-blue">
+  <view slot="content">医链</view>
+</cu-custom>
+
+
+
+<view class="cu-list menu">
+<view class="cu-item arrow">
+      <navigator class="content" hover-class="none">
+        <image src="/images/new/hos.png" class="png" mode="aspectFit"></image>
+        <text class="title">医院选择</text>
+      </navigator>
+      <picker mode="region" bindchange="RegionChange" value="{{region}}" custom-item="{{customItem}}">
+			<view class="picker">
+				{{region[0]}}
+			</view>
+		</picker>
+    </view>
+</view>
+
 <view class="cu-bar search bg-white">
     <view class="search-form round">
       <text class="cuIcon-search"></text>
@@ -8,6 +29,17 @@
     </view>
 </view>
 
+<!-- <view class="cu-form-group">
+		<view class="title">医院选择</view>
+		<picker mode="region" bindchange="RegionChange" value="{{region}}" custom-item="{{customItem}}">
+			<view class="picker">
+				{{region[0]}}
+			</view>
+		</picker>
+</view> -->
+
+
+
 <view class='list_box' wx:for='{{list}}' wx:key='this' wx:for-item='parentItem' wx:for-index='parentIndex' >
     <view class='list'>
         <view class='list_name_box' catchtap='listTap' data-parentindex='{{parentIndex}}'>
@@ -15,9 +47,9 @@
             <image src='/images/down.png' class='icon_down {{parentItem.show&&"icon_down_rotate"}}'></image>
         </view>
         <view class='list_item_box' wx:if='{{parentItem.show}}'>
-            <view class='list_item' wx:for='{{parentItem.item}}' wx:key='this' catchtap='listItemTap' data-index='{{index}}'  data-parentindex='{{parentIndex}}'>
-                <navigator class="list_item_name_box" url="/pages/register/verticalnav/{{item.itemNo}}/{{item.itemNo}}" hover-class="none">
-                    <text class='list_item_name'>{{item.itemName}}</text>
+            <view class='list_item ' wx:for='{{parentItem.item}}' wx:key='this' catchtap='listItemTap' data-index='{{index}}'  data-parentindex='{{parentIndex}}'>
+                <navigator class="list_item_name_box flex solid-bottom padding align-center" url="/pages/register/verticalnav/{{item.itemNo}}/{{item.itemNo}}" hover-class="none">
+                    <text class='list_item_name '>{{item.itemName}}</text>
                 </navigator>
                 <!-- <view class='list_item_name_box'>
                     <text class='list_item_name'>{{item.itemName}}</text>
@@ -37,4 +69,5 @@
         </view>
     </view>
 </view>
+</scroll-view>
 

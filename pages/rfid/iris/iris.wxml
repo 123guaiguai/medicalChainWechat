@@ -1,0 +1,18 @@
+<cu-custom isBack="{{true}}"> <view slot="backText" class="text-black text-bold">返回</view><view slot="content"></view></cu-custom>
+
+<view class="page-body">
+  <view class="page-body-wrapper">
+    <camera class="round solids" device-position="back" flash="auto" binderror="error" style="width: 100px; height: 105px;"></camera>
+    
+  </view>
+  <navigator class="content flex justify-center"  hover-class="none">
+		<image src="" class="png size" mode="aspectFit"></image>
+  </navigator>
+
+  <navigator class="content flex justify-center"  hover-class="none">
+    
+   <view class="content" bindtap='detail'>
+     <text class="text-black">-</text>
+   </view>
+  </navigator>
+</view>

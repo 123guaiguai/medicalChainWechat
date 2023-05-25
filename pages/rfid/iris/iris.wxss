@@ -1,0 +1,29 @@
+
+page {
+  background-image: url(https://z3.ax1x.com/2021/04/26/gSnvb4.png);
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  height: 100%;
+  font-size: 32rpx;
+  line-height: 1.6;
+}
+
+.page-body {
+  padding: 260rpx 0;
+}
+
+.page-body-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 25px;
+  left: -10px;
+  position: relative;
+  width: 100%;
+  height: 10%;
+}
+.text-z{
+  color: rgb(123,140,170);
+}
+
+

@@ -6,90 +6,44 @@
     <view class='content' style='top:{{StatusBar}}px;'>科室医生排班</view>
   </view>
 </view>
-<swiper class="screen-swiper round-dot" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
-  <swiper-item wx:for="{{1}}" wx:key>
-    <image src="https://z3.ax1x.com/2021/03/23/6HSuPP.png" mode='aspectFill'></image>
-  </swiper-item>
-</swiper>
+<view>
+    <image src="https://z3.ax1x.com/2021/03/31/cAeMX4.png" mode='widthFix' class='response'></image>
+</view>
 <view class="VerticalBox">
   <scroll-view class="VerticalNav nav" scroll-y scroll-with-animation scroll-top="{{VerticalNavTop}}" style="height:calc(100vh - 375rpx)">
     <view class="cu-item {{index==TabCur?'text-green cur':''}}" wx:for="{{list}}" wx:key bindtap='tabSelect' data-id="{{index}}">
-      {{item.name}}
+      {{item.day}}
     </view>
   </scroll-view>
   <scroll-view class="VerticalMain" scroll-y scroll-with-animation style="height:calc(100vh - 375rpx)" scroll-into-view="main-{{MainCur}}" bindscroll="VerticalMain">
     <view class="padding-top padding-lr" wx:for="{{list}}" wx:key id="main-{{index}}">
       <view class='cu-bar solid-bottom bg-white'>
         <view class='action'>
-          <text class='cuIcon-title text-green'></text> {{item.name}} </view>
+          <text class='cuIcon-title text-green'></text> {{item.day}} 
+        </view>
       </view>
       <view class="cu-list menu-avatar">
-       
-          <view class="cu-item" bindtap="detail">
-          <view class="cu-avatar radius lg" style="background-image:url(https://z3.ax1x.com/2021/03/22/6T9Jtx.png);"></view>
+          <view class="cu-item" bindtap="detail" wx:for="{{item.doctor}}" wx:key>
+          <view class="cu-avatar radius lg" style="background-image:url({{item.hp}});"></view>
           <view class="content">
             <view>
-              <view class="text-grey">王建国</view>
-              <view class="cu-tag round bg-grey sm">主治医师</view>
+              <view class="text-grey"> {{item.name}}</view>
+              <view class="cu-tag round bg-grey sm"> {{item.ident}}</view>
             </view>
             
             <view class="text-gray text-sm flex">
               <text class="text-cut">
-										<text class="text-cut"></text>科室：心血管科诊室 
+										<text class="text-cut"></text>科室：{{item.department}}  
               </text>
             </view>
           </view>
           <view class="action">
             <view class="text-grey text-xs">总余号</view>
-            <view class="cu-tag round bg-red sm">5</view>
+            <view class="cu-tag round bg-red sm"> {{item.num}} </view>
           </view>
         </view>
-        
-
-        <view class="cu-item">
-          <view class="cu-avatar radius lg" style="background-image:url(https://z3.ax1x.com/2021/03/22/6oQVXR.png);"></view>
-          <view class="content">
-            <view>
-              <view class="text-grey">周琳</view>
-              <view class="cu-tag round bg-grey sm">副主任医师</view>
-            </view>
-            
-            <view class="text-gray text-sm flex">
-              <text class="text-cut">
-										<text class="text-cut"></text>科室：心血管科诊室 
-              </text>
-            </view>
-          </view>
-          <view class="action">
-            <view class="text-grey text-xs">总余号</view>
-            <view class="cu-tag round bg-red sm">11</view>
-          </view>
-        </view>
-        
-
-        <view class="cu-item">
-          <view class="cu-avatar radius lg" style="background-image:url(https://z3.ax1x.com/2021/03/22/6T9Fmj.png);"></view>
-          <view class="content">
-            <view>
-              <view class="text-grey">吴燕</view>
-              <view class="cu-tag round bg-grey sm">主任医师</view>
-            </view>
-            
-            <view class="text-gray text-sm flex">
-              <text class="text-cut">
-										<text class="text-cut"></text>科室：心血管科诊室 
-              </text>
-            </view>
-          </view>
-          <view class="action">
-            <view class="text-grey text-xs">总余号</view>
-            <view class="cu-tag round bg-red sm">3</view>
-          </view>
       </view>
-        
 
-        
-      </view>
     </view>
   </scroll-view>
 </view>

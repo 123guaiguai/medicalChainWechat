@@ -9,7 +9,7 @@ Page({
   },
   onShareAppMessage() {
     return {
-      title: '电子病例系统1.0',
+      title: '医链1.0',
       imageUrl: '/images/share.jpg',
       path: '/pages/index/index'
     }

@@ -12,6 +12,7 @@ Page({
          itemName:'心血管科诊室',
          
        }, {
+           itemNo:102,
            itemName: '消化科诊室',
            
        }, {
@@ -30,6 +31,7 @@ Page({
       }, {
         listName: '外科',
         item: [{
+          itemNo:201,
           itemName: '心胸外科诊室',
           
         }, {
@@ -121,7 +123,14 @@ Page({
           
         }]
       }, 
-    ]
+    ],
+    region: ['成都市第六人民医院'],
+  },
+  
+  RegionChange: function(e) {
+    this.setData({
+      region: e.detail.value
+    })
   },
   //点击最外层列表展开收起
   listTap(e){

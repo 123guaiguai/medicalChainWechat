@@ -1,0 +1,7 @@
+<cu-custom isBack="{{true}}"> <view slot="backText" class="text-black text-bold">返回</view><view slot="content"></view></cu-custom>
+
+<view class="page-body">
+  <view class="page-body-wrapper">
+    <camera class="round solids" device-position="front" flash="auto" binderror="error" style="width: 240px; height: 260px;"></camera>
+  </view>
+</view>

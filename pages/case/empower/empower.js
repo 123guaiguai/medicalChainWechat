@@ -4,55 +4,40 @@ Page({
     StatusBar: app.globalData.StatusBar,
     CustomBar: app.globalData.CustomBar,
     iconList: [{
-      icon: 'cardboardfill',
-      color: 'red',
-      badge: 120,
-      name: 'VR'
+      name: '王建国',
+      hospital: '成都市第六人民医院',
+      department: '心血管科诊室',
+      no: '2018091618',
+      time: '2021/02/11 20:20',
+      hp: 'https://z3.ax1x.com/2021/03/22/6T9Jtx.png',
     }, {
-      icon: 'recordfill',
-      color: 'orange',
-      badge: 1,
-      name: '录像'
+      name: '周琳',
+      hospital: '成都市第三人民医院',
+      department: '心血管科诊室',
+      no: '1013091014',
+      time: '2021/02/03 10:11',
+      hp: 'https://z3.ax1x.com/2021/03/22/6oQVXR.png',
     }, {
-      icon: 'picfill',
-      color: 'yellow',
-      badge: 0,
-      name: '图像'
+      name: '张祥',
+      hospital: '成都市第二人民医院',
+      department: '皮肤科诊室',
+      no: '2849503950',
+      time: '2021/02/11 20:20',
+      hp: 'https://z3.ax1x.com/2021/03/31/cAkXGD.png',
     }, {
-      icon: 'noticefill',
-      color: 'olive',
-      badge: 22,
-      name: '通知'
+      name: '李湘兰',
+      hospital: '四川大学华西医院',
+      department: '消化内科诊室',
+      no: '4370050313',
+      time: '2020/11/05 12:01',
+      hp: 'https://z3.ax1x.com/2021/03/22/6T9Fmj.png',
     }, {
-      icon: 'upstagefill',
-      color: 'cyan',
-      badge: 0,
-      name: '排行榜'
-    }, {
-      icon: 'clothesfill',
-      color: 'blue',
-      badge: 0,
-      name: '皮肤'
-    }, {
-      icon: 'discoverfill',
-      color: 'purple',
-      badge: 0,
-      name: '发现'
-    }, {
-      icon: 'questionfill',
-      color: 'mauve',
-      badge: 0,
-      name: '帮助'
-    }, {
-      icon: 'commandfill',
-      color: 'purple',
-      badge: 0,
-      name: '问答'
-    }, {
-      icon: 'brandfill',
-      color: 'mauve',
-      badge: 0,
-      name: '版权'
+      name: '王润静',
+      hospital: '四川大学华西医院',
+      department: '消化内科诊室',
+      no: '1204056380',
+      time: '2019/10/24 14:34',
+      hp: 'https://z3.ax1x.com/2021/03/31/cAAae1.png',
     }],
     gridCol:3,
     skin: false

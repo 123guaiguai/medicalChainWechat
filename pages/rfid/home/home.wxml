@@ -1,0 +1,19 @@
+
+<cu-custom bgColor="bg-gradual-blue">
+  <view slot="content">RFID系统</view>
+</cu-custom>
+<view class="bg-b">
+<view class=" padding-xl bg-b  shadow shadow-lg">
+  <view class="flex justify-center text-lg">
+    请将医链手环贴近RFID手持一体机读取信息
+  </view>
+</view>
+<image src="https://z3.ax1x.com/2021/04/25/czy0dH.gif" mode="aspectFit" class="gif-wave"></image>
+
+<view class="cu-load bg-b {{!isLoad?'loading':'over'}} text-xxl"></view>
+
+<navigator class="content flex justify-center" url="../iris/iris" hover-class="none">
+		<image src="" class="png size" mode="aspectFit"></image>
+	</navigator>
+
+</view>

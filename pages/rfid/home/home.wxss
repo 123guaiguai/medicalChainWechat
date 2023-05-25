@@ -1,0 +1,9 @@
+.bg-b{  
+  color: white; 
+}
+page{
+  background-color:rgb(12,154,223);
+  }
+.cu-load.loading::after {
+  content: "读取中...";
+}

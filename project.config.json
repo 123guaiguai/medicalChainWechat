@@ -1,7 +1,8 @@
 {
   "description": "项目配置文件",
   "packOptions": {
-    "ignore": []
+    "ignore": [],
+    "include": []
   },
   "setting": {
     "urlCheck": true,
@@ -41,27 +42,13 @@
   },
   "compileType": "miniprogram",
   "libVersion": "2.4.2",
-  "appid": "wx4dca7bff5e4feae6",
-  "projectname": "ColorUI-template",
-  "debugOptions": {
-    "hidedInDevtools": []
-  },
-  "isGameTourist": false,
+  "appid": "wx0459994e33b9e039",
+  "projectname": "MediChain",
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
-  "condition": {
-    "search": {
-      "list": []
-    },
-    "conversation": {
-      "list": []
-    },
-    "game": {
-      "currentL": -1,
-      "list": []
-    },
-    "miniprogram": {
-      "list": []
-    }
+  "condition": {},
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
   }
 }
