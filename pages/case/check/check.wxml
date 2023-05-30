@@ -4,5 +4,6 @@
 </cu-custom>
 
 <view>
-  <image src="https://z3.ax1x.com/2021/04/25/cxAXv9.jpg" mode='widthFix' class='response'></image>
+  <!-- <image src="https://z3.ax1x.com/2021/04/25/cxAXv9.jpg" mode='widthFix' class='response'></image> -->
+  <image src="https://pic1.imgdb.cn/item/6471bad5f024cca17301a3ad.jpg" mode="widthFix" class="response"/>
 </view>

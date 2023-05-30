@@ -10,11 +10,17 @@
     "pages/personal/camera/camera",
     "pages/personal/info/info",
     "pages/personal/setting/setting",
+    "pages/personal/modifyInfo/modifyInfo",
     "pages/register/home/home",
     "pages/register/verticalnav/101/101",
     "pages/register/verticalnav/detail/detail",
     "pages/rfid/iris/iris",
-    "pages/rfid/home/home"
+    "pages/rfid/home/home",
+    "pages/insurance/home/home",
+    "pages/insurance/record/record",
+    "pages/insurance/insure/insure",
+    "pages/insurance/input/input",
+    "pages/insurance/pay/pay"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -24,7 +30,18 @@
     "navigationBarTextStyle": "white"
   },
   "usingComponents": {
-    "cu-custom": "/colorui/components/cu-custom"
+    "cu-custom": "/colorui/components/cu-custom",
+    "van-button": "@vant/weapp/button/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-radio": "@vant/weapp/radio/index",
+    "van-radio-group": "@vant/weapp/radio-group/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "van-area": "@vant/weapp/area/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-steps": "@vant/weapp/steps/index",
+    "van-dialog": "@vant/weapp/dialog/index"
   },
   "sitemapLocation": "sitemap.json"
 }

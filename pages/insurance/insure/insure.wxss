@@ -1,0 +1,198 @@
+.scrollPage .header-card {
+  position: relative;
+  width: 95%;
+  margin: 10px auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 10px;
+  box-sizing: border-box;
+}
+.scrollPage .header-card .header-title {
+  margin-bottom: 20px;
+}
+.scrollPage .header-card .header-title > text:nth-child(1) {
+  font-size: 22px;
+  font-weight: 700;
+}
+.scrollPage .header-card .header-title > text:nth-child(2) {
+  color: #ada9a9;
+  margin-left: 10px;
+}
+.scrollPage .header-card .switch-card-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.scrollPage .header-card .switch-card-wrapper .switch-card {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(252, 248, 244);
+  border-radius: 5px;
+  padding: 5px 5px;
+  border: 2px solid white;
+}
+.scrollPage .header-card .switch-card-wrapper .switch-card > text:nth-child(1) {
+  font-weight: 700;
+}
+.scrollPage .header-card .switch-card-wrapper .switch-card > text:nth-child(2) {
+  color: #ccc;
+  font-size: 12px;
+  margin: 10px 0;
+}
+.scrollPage .header-card .switch-card-wrapper .switch-card > text:nth-child(3) {
+  color: #f58147;
+  font-weight: 700;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.scrollPage .header-card .switch-card-wrapper .switch-card.active {
+  border: 2px solid #f58147;
+}
+.scrollPage .header-card .switch-card-wrapper .switch-card.active > text:nth-child(1) {
+  font-weight: 700;
+  color: #f58147;
+}
+.scrollPage .header-card .header-main-title {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 180px;
+  background-image: linear-gradient(to bottom, #fde9db, #ffede9, #fff2f6, #fef9fd, #ffffff);
+  padding: 10px 10px;
+  color: #f06d2c;
+}
+.scrollPage .header-card .header-main {
+  margin-top: 80px;
+  width: 100%;
+}
+.scrollPage .header-card .header-main .header-main-mian-row {
+  display: flex;
+  align-items: center;
+}
+.scrollPage .header-card .header-main .header-main-mian-row:nth-child(1) {
+  margin-bottom: 10px;
+}
+.scrollPage .header-card .header-main .header-main-mian-row:nth-child(1) > text:nth-child(1) {
+  font-weight: 700;
+  margin-right: 10px;
+}
+.scrollPage .header-card .header-main .header-main-mian-row:nth-child(1) > text:nth-child(2) {
+  padding: 2px 5px;
+  background-color: #f7dddb;
+  border-radius: 3px;
+  color: #f3685e;
+}
+.scrollPage .header-card .header-main .header-main-mian-row:nth-child(2) text {
+  font-weight: 700;
+}
+.scrollPage .header-card .header-main .header-main-mian-row:nth-child(3) {
+  margin-top: 20px;
+}
+.scrollPage .header-card .header-main .header-main-mian-row:nth-child(3) > text:nth-child(1) {
+  color: #b9b8b8;
+  font-size: 14px;
+}
+.scrollPage .header-card .header-main .header-main-mian-row:nth-child(3) > text:nth-child(2) {
+  color: #ea4748;
+  font-weight: 700;
+  font-size: 20px;
+}
+.scrollPage .header-card .header-look {
+  width: 90%;
+  background-color: #3874f6;
+  color: white;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  margin: 10px auto;
+}
+.scrollPage .main-card {
+  position: relative;
+  width: 95%;
+  margin: 10px auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 10px;
+  box-sizing: border-box;
+}
+.scrollPage .main-card .title {
+  display: inline-block;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.scrollPage .main-card .main-card-item {
+  width: 100%;
+  display: flex;
+}
+.scrollPage .main-card .main-card-item .main-card-item-left image {
+  width: 90px;
+  height: 90px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+.scrollPage .main-card .main-card-item .main-card-item-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.scrollPage .main-card .main-card-item .main-card-item-right .right-row1 > text:nth-child(1) {
+  font-weight: 700;
+}
+.scrollPage .main-card .main-card-item .main-card-item-right .right-row1 > text:nth-child(2) {
+  padding: 3px 5px;
+  background-color: #fbe4c5;
+  color: #a58159;
+  font-weight: 700;
+  font-size: 13px;
+  border-radius: 2px;
+  margin-left: 20px;
+}
+.scrollPage .main-card .main-card-item .main-card-item-right .right-row2 {
+  display: flex;
+  justify-content: space-between;
+}
+.scrollPage .main-card .main-card-item .main-card-item-right .right-row2 .right-row2-item {
+  width: 30%;
+  border-right: 1px dashed #ccc;
+  display: flex;
+  flex-direction: column;
+}
+.scrollPage .main-card .main-card-item .main-card-item-right .right-row2 .right-row2-item > text:nth-child(1) {
+  color: #ccc;
+  font-size: 13px;
+}
+.scrollPage .main-card .main-card-item .main-card-item-right .right-row2 .right-row2-item > text:nth-child(2) {
+  font-weight: 700;
+}
+.scrollPage .main-card .main-card-item .main-card-item-right .right-row2 .right-row2-item:nth-child(3) {
+  border-right: none;
+}
+.scrollPage .main-card .main-card-item .main-card-item-right .right-row3 > text:nth-child(1) {
+  color: #ea4748;
+  font-size: 18px;
+  font-weight: 700;
+}
+.scrollPage .main-card .main-card-item .main-card-item-right .right-row3 > text:nth-child(2) {
+  padding: 3px 5px;
+  border: 1px solid #66b3f9;
+  border-radius: 3px;
+  color: #66b3f9;
+  margin-left: 20px;
+}
+.scrollPage .main-card .main-card-bottom {
+  display: inline-block;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  background-color: #f6f9fe;
+  color: #3e66ac;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}

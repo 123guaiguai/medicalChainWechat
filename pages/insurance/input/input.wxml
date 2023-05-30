@@ -1,0 +1,121 @@
+<!--pages/insurance/input/input.wxml-->
+<scroll-view scroll-y class="scrollPage" enable-flex>
+  <cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+    <view slot="backText">返回</view>
+    <view slot="content">填写投保信息</view>
+  </cu-custom>
+  <view class="header-img">
+    <image src="https://img95.699pic.com/xsj/1n/8f/iz.jpg!/fw/700/watermark/url/L3hzai93YXRlcl9kZXRhaWwyLnBuZw/align/southeast" mode="" />
+    <text class="header-title">好医保.长期医疗</text>
+    <text class="tab">20年版</text>
+  </view>
+  <view class="mainWrapper">
+    <view class="header-card">
+      <view class="header-card-header">
+        <text>好医保金选</text>
+        <text>性价比5.0分,精算师推荐！</text>
+      </view>
+      <view class="header-card-main">
+        <view class="header-card-main-row">
+          <text>住院最多报销400万</text>
+          <text>医保保险后接着赔</text>
+        </view>
+        <view class="header-card-main-row">
+          <text>保证续赔20年</text>
+          <text>理赔停售页不断保</text>
+        </view>
+      </view>
+      <view class="header-card-bottom">
+        <text>安心赔</text>
+        <text>2万以内，2日完成</text>
+      </view>
+    </view>
+    <view class="detail">
+      <view class="title">
+        <text>保单详情</text>
+        <text>更多详情</text>
+      </view>
+      <view class="detail-row">
+        <text>住院医疗费用保险金(含质子重离子医疗)</text>
+      </view>
+      <view class="detail-row">
+        <text>院外恶性肿瘤特药保险金</text>
+        <text>共400万</text>
+      </view>
+      <view class="detail-row">
+        <text>住院前后30天急诊医疗保险金</text>
+      </view>
+      <view class="detail-row">
+        <text>100种重度疾病津贴保险金</text>
+        <text>1万</text>
+      </view>
+      <view class="detail-row">
+        <text>就医绿色通道</text>
+        <text>赠送</text>
+      </view>
+      <view class="detail-row">
+        <text>医疗费用垫付</text>
+        <text>赠送</text>
+      </view>
+      <view class="detail-row">
+        <text>保障期限</text>
+        <text>1年(保证续保20年)</text>
+      </view>
+      <view class="detail-row">
+        <text>免赔额</text>
+        <text>1万</text>
+      </view>
+      <van-divider />
+      <view class="read">
+        请阅读 <text>《投保须知》 </text><text>《保险条款》 </text><text>《服务协议》 </text><text>《产品说明书》 </text><text>《客户告知书》 </text><text>《健康服务协议》 </text>
+      </view>
+    </view>
+    <view class="confirmInfo">
+      <view class="title">
+        <text>请确认投保信息</text>
+        <text>数据来源于你的个人信息中心(本人填写小程序)</text>
+      </view>
+      <view class="who">
+        <view class="whoTitle">
+          <text>为谁投保</text>
+          <text>自己健康是对家人的负责</text>
+        </view>
+        <view class="whoList">
+          <view class="'whoItem' {{insuranceObjective===index?'active':''}}" wx:for="{{insuranceObjectiveList}}" wx:key="index" bindtap="changeInsuranceObjective" data-objective="{{index}}">
+            {{item}}
+          </view>
+        </view>
+        <van-cell-group wx:if="{{insuranceObjective!==0}}">
+          <van-field value="{{ name }}" label="被保人姓名" placeholder="请输入姓名" input-align="left" bindinput="changeName" clearable/>
+          <van-field value="{{ identityID }}" label="身份证号码" placeholder="请输入身份证号" input-align="left" bindinput="changeIdentityID" clearable/>
+        </van-cell-group>
+        <view class="switchMedicalInsurance">
+          <text class="switchMedicalInsuranceItem">是否有医保</text>
+          <text class="switchMedicalInsuranceItem {{medicalInsurance?'active':''}}" bindtap="changeMedicalInsurance" data-medicalInsurance="{{true}}">无医保</text>
+          <text class="switchMedicalInsuranceItem {{medicalInsurance?'':'active'}}" bindtap="changeMedicalInsurance" data-medicalInsurance="{{false}}">有医保</text>
+        </view>
+        <view class="payWay">
+          <text class="payWayItem">付款方式</text>
+          <view class="payWayItem {{payWay?'active':''}}" bindtap="changePayWay" data-payWay="{{true}}">
+            <text>按年付款</text>
+            <text>(一次性付款)</text>
+          </view>
+          <view class="payWayItem {{payWay?'':'active'}}" bindtap="changePayWay" data-payWay="{{false}}">
+            <text>分期付款</text>
+            <text>(分12个月付款)</text>
+          </view>
+        </view>
+
+      </view>
+    </view>
+    <view class="imgPlain">
+      <image src="https://pic1.imgdb.cn/item/647417e3f024cca1738b04e5.jpg" mode="widthFix" />
+    </view>
+    <view class="fill"></view>
+    <view class="payPlain">
+      <text><text>12.44</text>元/月</text>
+      <text bindtap="insure">我要投保</text>
+    </view>
+    <van-dialog id="van-dialog" />
+  </view>
+</scroll-view>

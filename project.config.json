@@ -5,6 +5,8 @@
     "include": []
   },
   "setting": {
+    "packNpmManually": false,
+    "packNpmRelationList": [],
     "urlCheck": true,
     "es6": true,
     "enhance": false,
@@ -36,8 +38,6 @@
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
     "userConfirmedBundleSwitch": false,
-    "packNpmManually": false,
-    "packNpmRelationList": [],
     "minifyWXSS": true
   },
   "compileType": "miniprogram",

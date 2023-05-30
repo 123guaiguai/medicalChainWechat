@@ -1,0 +1,41 @@
+<!--pages/insurance/pay/pay.wxml-->
+<scroll-view scroll-y class="scrollPage">
+  <cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+    <view slot="backText">返回</view>
+    <view slot="content">支付</view>
+  </cu-custom>
+  <view class="title">
+    <text>好医保-长期医疗(20年版)</text>
+    <text>由中国人民健康保险股份有限公司承担</text>
+  </view>
+  <view class="pay">
+    <view class="header">
+      <text>付费方式</text>
+      <text>分期付款每月缴费</text>
+    </view>
+    <van-divider />
+    <view class="footer">
+      <text>保费</text>
+      <text>12.44元/月 共12期</text>
+    </view>
+  </view>
+  <view class="info">
+    <view class="header">
+      <text>被保人</text>
+      <text>*琪</text>
+    </view>
+    <van-divider />
+    <view class="footer">
+      <text>身份证号</text>
+      <text>3****************0</text>
+    </view>
+  </view>
+  <view class="regulation">
+    <text>退保规则</text>
+    <text>可随时退保，退保后不再自动扣费</text>
+  </view>
+  <view class="agree">
+    <text class="read">阅读并同意 <text>《付款授权》 </text><text>《延续保障服务协议》 </text><text>《投保须知》 </text><text>《保险条款》 </text><text>《服务协议》 </text><text>《产品说明书》 </text><text>《客户告知书》 </text><text>《健康服务协议》 </text></text>
+    <text>同意协议并投保</text>
+  </view>
+</scroll-view>

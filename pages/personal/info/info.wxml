@@ -1,11 +1,11 @@
 <scroll-view scroll-y="{{modalName==null}}" class="page {{modalName!=null?'show':''}}">
   <cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
     <view slot="backText">返回</view>
-    <view slot="content">患者个人信息管理</view>
+    <view slot="content">患者个人信息</view>
   </cu-custom>
 
   <view class="cu-list grid col-{{gridCol}} sm-border card-menu margin-top">
-    <view class="cu-item" wx:for="{{iconList}}" wx:key wx:if="{{index<gridCol*2}}">
+    <view class="cu-item" wx:for="{{iconList}}" wx:key wx:if="{{index<gridCol*2}}" bindtap="modifyInfo" data-tap="{{item.name}}">
       <view class="cuIcon-{{item.icon}} text-{{item.color}}">
       </view>
       <text>{{item.name}}</text>

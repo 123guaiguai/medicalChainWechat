@@ -2,7 +2,8 @@
   "usingComponents": {
     "case": "/pages/case/home/home",
     "register": "/pages/register/home/home",
-    "personal": "/pages/personal/home/home"
+    "personal": "/pages/personal/home/home",
+    "insurance":"/pages/insurance/home/home"
   }
   
 }

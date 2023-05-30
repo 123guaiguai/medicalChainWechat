@@ -1,11 +1,12 @@
 Page({
   data: {
-    PageCur: 'personal'
+    PageCur: 'insurance'
   },
   NavChange(e) {
     this.setData({
       PageCur: e.currentTarget.dataset.cur
     })
+    
   },
   onShareAppMessage() {
     return {

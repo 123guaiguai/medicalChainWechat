@@ -22,7 +22,7 @@
 <view class="cu-bar search bg-white">
     <view class="search-form round">
       <text class="cuIcon-search"></text>
-      <input type="text" placeholder="请输入科室名称查询" confirm-type="search"></input>
+      <input type="text" class="searchRoom" placeholder="请输入科室名称查询" confirm-type="search"></input>
     </view>
     <view class="action">
       <button class="cu-btn bg-cyan shadow-blur round">搜索</button>

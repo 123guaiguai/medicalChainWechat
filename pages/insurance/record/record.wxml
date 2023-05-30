@@ -1,0 +1,125 @@
+<!--pages/insurance/record/record.wxml-->
+<scroll-view scroll-y class="scrollPage">
+  <cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+    <view slot="backText">返回</view>
+    <view slot="content">医疗报销记录</view>
+  </cu-custom>
+  <view class="cu-timeline">
+    <view class="cu-time">2021年</view>
+    <view class="cu-item text-blue">
+      <view class="bg-gradual-blue content shadow">
+        <view class="cu-capsule radius ">
+          <view class="cu-tag bg-white text-blue text-lg">2021/03/11 15:26</view>
+          <view class="cu-tag line-white text-lg">No：2900092678</view>
+        </view>
+        <view class="margin-top-sm text-content text-lg">
+          <view>报销医院：成都市第六人民医院</view>
+          <view>生效保险：医保康</view>
+          <view>报销金额：4000元</view>
+        </view>
+      </view>
+      <view class="flex">
+        <button class="cu-btn line-green lg shadow flex-sub" bindtap='loadModal'>
+          <text class="cuIcon-down"></text> 下载</button>
+        <button class="cu-btn  line-blue lg shadow flex-sub" bindtap='detail'>
+          <text class="cuIcon-searchlist"></text> 查看</button>
+
+      </view>
+    </view>
+
+    <view class="cu-time">2020年</view>
+    <view class="cu-item text-blue">
+      <view class="bg-gradual-blue content shadow">
+        <view class="cu-capsule radius ">
+          <view class="cu-tag bg-white text-blue text-lg">2020/11/25 16:02</view>
+          <view class="cu-tag line-white text-lg">No：2018091618</view>
+        </view>
+        <view class="margin-top-sm text-content text-lg">
+          <view>报销医院：成都市第六人民医院</view>
+          <view>生效保险：医保康</view>
+          <view>报销金额：1000元</view>
+        </view>
+      </view>
+      <view class="flex">
+        <button class="cu-btn line-green lg shadow flex-sub" bindtap='loadModal'>
+          <text class="cuIcon-down"></text> 下载</button>
+        <button class="cu-btn  line-blue lg shadow flex-sub" bindtap='loadProgress'>
+          <text class="cuIcon-searchlist"></text> 查看</button>
+      </view>
+    </view>
+
+    <view class="cu-time">2019年</view>
+    <view class="cu-item text-blue">
+      <view class="bg-gradual-blue content shadow">
+        <view class="cu-capsule radius ">
+          <view class="cu-tag bg-white text-blue text-lg">2019/07/11 10:42</view>
+          <view class="cu-tag line-white text-lg">No：1013091014</view>
+        </view>
+        <view class="margin-top-sm text-content text-lg">
+          <view>报销医院：成都市第二人民医院</view>
+          <view>生效保险：大病保</view>
+          <view>报销金额：3000元</view>
+        </view>
+      </view>
+      <view class="flex">
+        <button class="cu-btn line-green lg shadow flex-sub" bindtap='loadModal'>
+          <text class="cuIcon-down"></text> 下载</button>
+        <button class="cu-btn  line-blue lg shadow flex-sub" bindtap='loadProgress'>
+          <text class="cuIcon-searchlist"></text> 查看</button>
+
+      </view>
+    </view>
+
+    <view class="cu-time">2018年</view>
+    <view class="cu-item text-blue">
+      <view class="bg-gradual-blue content shadow">
+        <view class="cu-capsule radius ">
+          <view class="cu-tag bg-white text-blue text-lg">2018/12/29 15:24</view>
+          <view class="cu-tag line-white text-lg">No：4370050313</view>
+        </view>
+        <view class="margin-top-sm text-content text-lg">
+          <view>报销医院：四川大学华西医院</view>
+          <view>生效保险：医保康</view>
+          <view>报销金额：1000元</view>
+        </view>
+      </view>
+      <view class="flex">
+        <button class="cu-btn line-green lg shadow flex-sub" bindtap='loadModal'>
+          <text class="cuIcon-down"></text> 下载</button>
+        <button class="cu-btn  line-blue lg shadow flex-sub" bindtap='loadProgress'>
+          <text class="cuIcon-searchlist"></text> 查看</button>
+
+      </view>
+    </view>
+
+    <view class="cu-item text-blue">
+      <view class="bg-gradual-blue content shadow">
+        <view class="cu-capsule radius ">
+          <view class="cu-tag bg-white text-blue text-lg">2018/06/30 09:09</view>
+          <view class="cu-tag line-white text-lg">No：1204056380</view>
+        </view>
+        <view class="margin-top-sm text-content text-lg">
+          <view>报销医院：四川大学华西医院</view>
+          <view>生效保险：大病保</view>
+          <view>报销金额：3000元</view>
+        </view>
+      </view>
+      <view class="flex">
+        <button class="cu-btn line-green lg shadow flex-sub" bindtap='loadModal'>
+          <text class="cuIcon-down"></text> 下载</button>
+        <button class="cu-btn  line-blue lg shadow flex-sub" bindtap='loadProgress'>
+          <text class="cuIcon-searchlist"></text> 查看</button>
+
+      </view>
+    </view>
+    <view class='cu-load load-modal' wx:if="{{loadModal}}">
+      <image src='/images/new/xz.png' class='png' mode='aspectFit'></image>
+      <view class='gray-text'>下载解密中...</view>
+    </view>
+
+    <view class='load-progress {{loadProgress!=0?"show":"hide"}}' style="top:{{CustomBar}}px;">
+      <view class='load-progress-bar bg-blue' style="transform: translate3d(-{{100-loadProgress}}%, 0px, 0px);"></view>
+      <view class='load-progress-spinner text-blue'></view>
+    </view>
+  </view>
+</scroll-view>

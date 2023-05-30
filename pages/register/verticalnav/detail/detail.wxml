@@ -1,23 +1,26 @@
-<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">科室医生</view></cu-custom>
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">科室医生</view>
+</cu-custom>
 
 <view class="cu-card case {{isCard?'no-card':''}}">
-  <view class="cu-item shadow">   
+  <view class="cu-item shadow">
     <view class="cu-list menu-avatar">
       <view class="cu-item">
         <view class="cu-avatar round lg" style="background-image:url(https://z3.ax1x.com/2021/03/22/6T9Jtx.png);"></view>
         <view class="content flex-sub">
           <view>
-              <view class="text-grey">王建国</view>
-              <view class="cu-tag round bg-grey sm">主治医师</view>
-            </view>
+            <view class="text-grey">王建国</view>
+            <view class="cu-tag round bg-grey sm">主治医师</view>
+          </view>
           <view class="text-gray text-sm flex justify-between">
             科室：心血管科诊室
           </view>
         </view>
-        
+
       </view>
 
-  <!-- <view class="cu-card dynamic {{isCard?'no-card':''}}">
+      <!-- <view class="cu-card dynamic {{isCard?'no-card':''}}">
     <view class="cu-item shadow">
     <view class="cu-list menu-avatar">
       医生简介：   
@@ -29,78 +32,76 @@
     </view>
   </view> -->
 
-  <view class="cu-list menu card-menu">
-    <view class="cu-item ">
-      <navigator class="content" hover-class="none">
-        <image src="/images/new/jj.png" class="png" mode="aspectFit"></image>
-        <text class="text-black">医生简介：</text>
-      </navigator>
-    </view>
-  </view>
-  <view class="content">
-    <view class="solid-bottom padding-bottom-sm">
-      <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
-        擅长心血管疾病的介入诊治。
+      <view class="cu-list menu card-menu">
+        <view class="cu-item ">
+          <navigator class="content" hover-class="none">
+            <image src="/images/new/jj.png" class="png" mode="aspectFit"></image>
+            <text class="text-black">医生简介：</text>
+          </navigator>
+        </view>
+      </view>
+      <view class="content">
+        <view class="solid-bottom padding-bottom-sm">
+          <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+          擅长心血管疾病的介入诊治。
+        </view>
+      </view>
+
+
+      <view class="cu-bar bg-white">
+        <view class='action'>
+          <text class='cuIcon-titles text-orange '></text> 2021-3-26 上午
+          <text class="user-motto hello text-red" decode="{{true}}">&nbsp;&nbsp;￥11</text>
+        </view>
+        <view class='action'>
+          <text class="user-motto" decode="{{true}}">余号：25&nbsp;&nbsp;</text>
+          <button class="cu-btn round bg-blue" bindtap="showModal" data-target="order">预约</button>
+        </view>
+      </view>
+
+      <view class="cu-bar bg-white">
+        <view class='action'>
+          <text class='cuIcon-titles text-orange '></text> 2021-3-26 下午
+          <text class="user-motto hello text-red" decode="{{true}}">&nbsp;&nbsp;￥11</text>
+        </view>
+        <view class='action'>
+          <text class="user-motto" decode="{{true}}">余号：22&nbsp;&nbsp;</text>
+          <button class="cu-btn round bg-blue" bindtap="showModal" data-target="order">预约</button>
+        </view>
+      </view>
+
+      <view class="cu-bar bg-white">
+        <view class='action'>
+          <text class='cuIcon-titles text-orange '></text> 2021-3-27 上午
+          <text class="user-motto hello text-red" decode="{{true}}">&nbsp;&nbsp;￥11</text>
+        </view>
+        <view class='action'>
+          <text class="user-motto" decode="{{true}}">余号：31&nbsp;&nbsp;</text>
+          <button class="cu-btn round bg-blue" bindtap="showModal" data-target="order">预约</button>
+        </view>
+      </view>
+
+      <view class="cu-modal {{modalName=='order'?'show':''}}">
+        <view class="cu-dialog">
+          <view class="cu-bar bg-white justify-end">
+            <view class="content text-black text-bold">挂号须知</view>
+          </view>
+          <view class="bg-white padding-sm text-black flex justify-start">
+            1、挂号需支付挂号费
+          </view>
+          <view class="bg-white padding-sm text-black flex justify-start">
+            2、请按照相应时间提前前往对应科室就诊
+          </view>
+          <view class="cu-bar bg-white">
+            <view class="action margin-0 flex-sub text-grey" bindtap="hideModal">取消</view>
+            <view class="action margin-0 flex-sub text-black solid-left" bindtap="hideModal">确认挂号</view>
+          </view>
+        </view>
+      </view>
+
+
     </view>
   </view>
 
-
-  <view class="cu-bar bg-white">
-  <view class='action'>
-    <text class='cuIcon-titles text-orange '></text> 2021-3-26 上午
-    <text class="user-motto hello text-red" decode="{{true}}">&nbsp;&nbsp;￥11</text>
-  </view>
-  <view class='action'>
-    <text class="user-motto" decode="{{true}}">余号：25&nbsp;&nbsp;</text>
-    <button class="cu-btn round bg-blue" bindtap="showModal" data-target="order">预约</button>
-  </view>
 </view>
-
-<view class="cu-bar bg-white">
-  <view class='action'>
-    <text class='cuIcon-titles text-orange '></text> 2021-3-26 下午
-    <text class="user-motto hello text-red" decode="{{true}}">&nbsp;&nbsp;￥11</text>
-  </view>
-  <view class='action'>
-    <text class="user-motto" decode="{{true}}">余号：22&nbsp;&nbsp;</text>
-    <button class="cu-btn round bg-blue" bindtap="showModal" data-target="order">预约</button>
-  </view>
-</view>
-
-<view class="cu-bar bg-white">
-  <view class='action'>
-    <text class='cuIcon-titles text-orange '></text> 2021-3-27 上午
-    <text class="user-motto hello text-red" decode="{{true}}">&nbsp;&nbsp;￥11</text>
-  </view>
-  <view class='action'>
-    <text class="user-motto" decode="{{true}}">余号：31&nbsp;&nbsp;</text>
-    <button class="cu-btn round bg-blue" bindtap="showModal" data-target="order">预约</button>
-  </view>
-</view>
-
-<view class="cu-modal {{modalName=='order'?'show':''}}">
-  <view class="cu-dialog">
-    <view class="cu-bar bg-white justify-end">
-      <view class="content text-black text-bold">挂号须知</view>
-    </view>
-    <view class="bg-white padding-sm text-black flex justify-start">
-      1、挂号需支付挂号费
-    </view>
-    <view class="bg-white padding-sm text-black flex justify-start">
-      2、请按照相应时间提前前往对应科室就诊
-    </view>
-    <view class="cu-bar bg-white">
-      <view class="action margin-0 flex-sub text-grey" bindtap="hideModal">取消</view>
-      <view class="action margin-0 flex-sub text-black solid-left" bindtap="hideModal">确认挂号</view>
-    </view>
-  </view>
-</view>
-  
-      
-    </view>
-  </view>
-
-</view>
-
-
-
+<van-dialog id="van-dialog" />

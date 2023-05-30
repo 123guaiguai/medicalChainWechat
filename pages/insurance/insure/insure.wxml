@@ -1,0 +1,74 @@
+<!--pages/insurance/insure/insure.wxml-->
+<scroll-view scroll-y class="scrollPage" enable-flex>
+  <cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+    <view slot="backText">返回</view>
+    <view slot="content">医疗保险投保</view>
+  </cu-custom>
+  <view class="header-card">
+    <view class="header-title">
+      <text>健康保障</text>
+      <text>配齐更安心</text>
+    </view>
+    <view class="switch-card-wrapper">
+      <view class="switch-card {{switchCardIndex===index?'active':''}}" bindtap="changeBorderStyle" data-index="{{index}}" wx:for="{{switchCardList}}" wx:key="index">
+        <text>{{item.text1}}</text>
+        <text>{{item.text2}}</text>
+        <text>{{item.text3}}</text>
+      </view>
+
+    </view>
+    <view class="header-main-title">建议补充 {{switchDescList[switchCardIndex].title}}</view>
+    <view class="header-main">
+      <view class="header-main-main">
+        <view class="header-main-mian-row">
+          <text>{{switchDescList[switchCardIndex].text1}}</text>
+          <text>{{switchDescList[switchCardIndex].textAddition1?switchDescList[switchCardIndex].textAddition1:''}}</text>
+        </view>
+        <view class="header-main-mian-row">
+          <text>{{switchDescList[switchCardIndex].text2}}</text>
+          <text style="color:red">{{switchDescList[switchCardIndex].textAddition2?switchDescList[switchCardIndex].textAddition2:''}}</text>
+        </view>
+        <view class="header-main-mian-row">
+          <text>报销额度:</text>
+          <text>{{switchDescList[switchCardIndex].text3}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="header-look">去看看</view>
+  </view>
+  <view class="main-card">
+    <text class="title">为你推荐</text>
+    <view class="main-card-item-wrap" wx:for="{{insuranceList}}" wx:key="index" bindtap="chooseInsurance">
+    <view class="main-card-item">
+      <view class="main-card-item-left">
+        <image src="{{item.img}}" />
+      </view>
+      <view class="main-card-item-right">
+        <view class="right-row1">
+          <text>{{item.title}}</text>
+          <text>保平安</text>
+        </view>
+        <view class="right-row2">
+          <view class="right-row2-item">
+            <text>保证续赔</text>
+            <text>{{item.text1}}</text>
+          </view>
+          <view class="right-row2-item">
+            <text>保额</text>
+            <text>{{item.text2}}</text>
+          </view>
+          <view class="right-row2-item">
+            <text>保障对象</text>
+            <text>{{item.text3}}</text>
+          </view>
+        </view>
+        <view class="right-row3">
+          <text>{{item.minMoney}}</text>
+          <text>安心陪</text>
+        </view>
+      </view>
+    </view>
+    <text class="main-card-bottom">{{item.bottomDesc}}</text>
+    </view>
+  </view>
+</scroll-view>

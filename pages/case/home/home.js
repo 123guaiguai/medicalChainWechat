@@ -15,13 +15,13 @@ Component({
         title: '病历操作',
         img: 'https://z3.ax1x.com/2021/03/23/6Hnhbq.png',
         url: '/operation/operation'
-      }
+      },
       // {
       //   title: '病例销毁',
       //   img: 'https://z3.ax1x.com/2021/03/23/6Hmv4S.png',
       //   url: ''
       // }
-      // {
+      //  {
       //   title: '垂直导航',
       //   img: 'https://image.weilanwl.com/color2.0/plugin/qpczdh2307.jpg',
       //   url: '/verticalnav/verticalnav'

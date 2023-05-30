@@ -1,0 +1,14 @@
+/* pages/personal/modifyInfo/modifyInfo.wxss */
+.scrollPage{
+  height:100vh;
+  background-color: #dceaf1;
+}
+.inputField{
+  width:100%;
+  background-color: white;
+  margin-bottom: 20px;
+}
+.inputField2{
+  width:100%;
+  background-color: white;
+}

@@ -47,6 +47,9 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    name:"",//本人姓名
+    identityID:"",//本人身份证号
+    uniqueID:"",//根据姓名和身份证号生成的唯一ID
   }
 })

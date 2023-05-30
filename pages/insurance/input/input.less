@@ -1,0 +1,301 @@
+.header-img {
+  position: relative;
+  width: 100%;
+
+  image {
+    width: 100%;
+  }
+
+  .header-title {
+    position: absolute;
+    left: 10px;
+    top: 20%;
+    color: rgb(217, 248, 248);
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .tab {
+    position: absolute;
+    left: 160px;
+    top: 20%;
+    padding: 2px 5px;
+    background-color: #fa6f18;
+    border-radius: 3px;
+    font-size: 10px;
+    color: white;
+  }
+}
+
+.mainWrapper {
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+  .header-card {
+    background-color: white;
+    border-radius: 10px;
+    transform: translateY(-60px);
+    padding-bottom: 10px;
+    .header-card-header{
+      padding: 15px 10px;
+      padding-bottom:30px;
+      background-color: #f9e0bf;
+      border-radius: 10px;
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      &>text:nth-child(1){
+        color:#694525;
+        font-weight: 700;
+        font-size:20px;
+      }
+      &>text:nth-child(2){
+        color:#694525;  
+      }
+    }
+    .header-card-main{
+      padding: 15px 10px;
+      background-color:white;
+      border-radius: 10px;
+      transform: translateY(-15px);
+      display:flex;
+      justify-content: space-between;
+      .header-card-main-row{
+        flex:1;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        &>text:nth-child(1){
+          color:#836135;
+          font-weight: 700;
+          font-size:18px;
+          margin-bottom:10px;
+        }
+        &>text:nth-child(2){
+          color:#ccc;
+        }
+      }
+    }
+    .header-card-bottom{
+      padding: 5px 10px;
+      background-color:white;
+      border-radius: 10px;
+      &>text:nth-child(1){
+        padding:3px 3px;
+        border:1px solid #52b5f8;
+        color:#52b5f8;
+        border-radius: 3px;
+      }
+      &>text:nth-child(2){
+        color:#ccc;
+        font-weight: 700;
+        margin-left:10px;
+      }
+    }
+  }
+  .detail{
+    background-color: white;
+    border-radius: 10px;
+    padding:15px 10px;
+    transform: translateY(-50px);
+    .title{
+      display:flex;
+      justify-content: space-between;
+      margin-bottom:10px;
+      &>text:nth-child(1){
+        font-weight: 700;
+      }
+      &>text:nth-child(2){
+        font-weight: 700;
+        color:#6ebaea;
+      }
+    }
+    .detail-row{
+      display:flex;
+      justify-content:space-between;
+      margin:10px 0;
+      &>text:nth-child(2){
+          color:#ccc;
+      }
+    }
+    .read{
+      text{
+        color:#6ebaea;
+      }
+    }
+  }
+  .confirmInfo{
+    background-color: white;
+    border-radius: 10px;
+    padding:15px 10px;
+    transform: translateY(-30px);
+    .title{
+      display:flex;
+      flex-direction: column;
+
+      &>text:nth-child(1){
+        font-weight: 700;
+        margin-bottom:5px;
+      }
+      &>text:nth-child(2){
+        color:#ccc;
+        font-size:14px;
+      }
+    }
+    .who{
+      margin-top:20px;
+      .whoTitle{
+        display:flex;
+        &>text:nth-child(1){
+          font-size:17px;
+          font-weight:700;
+          margin-right:5px;
+        }
+        &>text:nth-child(2){
+          padding: 3px 5px;
+          background-color: #fbf7eb;
+          color: #eacb91;
+          font-size:13px;
+          border-radius: 3px;
+        }
+      }
+      .whoList{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom:20px;
+       .whoItem{
+          padding:10px 20px;
+          background-color: #f5f5f5;
+          border-radius: 5px;
+        }
+        .whoItem.active{
+          padding:10px 20px;
+          background-color: #e9f1fc;
+          color:#779fee;
+          border-radius: 5px;
+        }
+      }
+      .switchMedicalInsurance{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        .switchMedicalInsuranceItem:nth-child(1){
+          width:100%;
+          font-size:17px;
+          font-weight: 700;
+          margin-bottom:10px;
+          margin-top:10px;
+        }
+        .switchMedicalInsuranceItem:nth-child(2){
+          width:45%;
+          background-color: #f5f5f5;
+          padding: 10px 0;
+          border-radius: 5px;
+          text-align: center;
+        }
+        .switchMedicalInsuranceItem:nth-child(3){
+          width:45%;
+          background-color: #f5f5f5;
+          padding: 10px 0;
+          border-radius: 5px;
+          text-align: center;
+        }
+        .switchMedicalInsuranceItem.active{
+          background-color: #e9f1fc;
+          color: #1f68e6;
+        }
+      }
+      .payWay{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        .payWayItem:nth-child(1){
+          width:100%;
+          font-size:17px;
+          font-weight: 700;
+          margin-bottom:10px;
+          margin-top:10px;
+        }
+        .payWayItem:nth-child(2){
+          width:45%;
+          background-color: #f5f5f5;
+          padding: 10px 0;
+          border-radius: 5px;
+          text-align: center;
+          display:flex;
+          flex-direction: column;
+          align-items: center;
+          &>text:nth-child(1){
+            font-weight: 700;
+          }
+          &>text:nth-child(2){
+            color:#ccc;
+            
+          }
+        }
+        .payWayItem:nth-child(3){
+          width:45%;
+          background-color: #f5f5f5;
+          padding: 10px 0;
+          border-radius: 5px;
+          text-align: center;
+          display:flex;
+          flex-direction: column;
+          align-items: center;
+          &>text:nth-child(1){
+            font-weight: 700;
+          }
+          &>text:nth-child(2){
+            color:#ccc;
+            
+          }
+        }
+        .payWayItem.active{
+          background-color: #e9f1fc;
+          &>text:nth-child(1){
+            color:#1f68e6;
+          }
+        }
+      }
+    }
+  }
+  .imgPlain{
+    background-color: white;
+    border-radius: 10px;
+    padding:15px 10px;
+    display:flex;
+    justify-content: center;
+  }
+  .fill{
+    height:50px;
+  }
+  .payPlain{
+    position: fixed;
+    bottom:0px;
+    left:0;
+    width:100%;
+    background-color:white;
+    height:60px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    &>text:nth-child(1){
+      color:rgb(243, 161, 53);
+      font-size:17px;
+      font-weight: 700;
+      text{
+        font-size:19px;
+        margin-right:3px;
+      }
+    }
+    &>text:nth-child(2){
+      padding: 10px 15px;
+      background-color: rgb(72, 159, 240);
+      color:white;
+      border-radius: 5px;
+    }
+  }
+
+}

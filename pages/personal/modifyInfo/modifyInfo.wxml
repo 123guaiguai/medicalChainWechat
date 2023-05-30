@@ -1,0 +1,51 @@
+<!--pages/personal/modifyInfo/modifyInfo.wxml-->
+<scroll-view scroll-y class="scrollPage">
+  <cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+    <view slot="backText">返回</view>
+    <view slot="content">个人信息中心</view>
+  </cu-custom>
+  <van-divider contentPosition="center" textColor="#1989fa" borderColor="#1989fa">基本信息</van-divider>
+  <van-cell-group inset>
+    <van-field model:value="{{ name }}" required clearable label="姓名" icon="question-o" placeholder="请输入姓名" bind:click-icon="onClickIcon" clearable bindinput="changeInputField" data-inputType="name"/>
+    <van-field model:value="{{ identityID }}" required clearable label="身份证" placeholder="请输入身份证号" clearable bindinput="changeInputField" data-inputType="identityID"/>
+    <van-field model:value="{{ phone }}" required label="手机号" placeholder="请输入手机号" error-message="{{errorPhone}}" border="{{ false }}" clearable bind:blur="checkPhone" bindinput="changeInputField" data-inputType="phone"/>
+  </van-cell-group>
+  <van-divider contentPosition="center" textColor="#1989fa" borderColor="#1989fa">性别</van-divider>
+  <van-radio-group value="{{ sexRadio }}" bind:change="changeSex">
+    <van-cell-group inset>
+      <van-cell title="男" clickable data-name="1" bind:click="clickSex">
+        <van-radio slot="right-icon" name="1" />
+      </van-cell>
+      <van-cell title="女" clickable data-name="2" bind:click="clickSex">
+        <van-radio slot="right-icon" name="2" />
+      </van-cell>
+    </van-cell-group>
+  </van-radio-group>
+  <van-divider contentPosition="center" textColor="#1989fa" borderColor="#1989fa">其他信息</van-divider>
+  <van-cell-group inset>
+    <van-field value="{{ fieldValue }}" is-link readonly label="地址" placeholder="请选择所在地区" bind:tap="showPop" />
+  </van-cell-group>
+
+  <van-popup show="{{ show }}" round position="bottom">
+    <van-area area-list="{{ areaList }}" bind:confirm="confirmArea" bind:cancel="cancelArea"/>
+  </van-popup>
+  <van-divider contentPosition="center" textColor="#1989fa" borderColor="#1989fa">生成唯一ID</van-divider>
+  <van-cell-group inset>
+  <van-field
+    value="{{ uniqueId }}"
+    center
+    clearable
+    label="ID"
+    placeholder="用户唯一ID"
+    border="{{ false }}"
+    use-button-slot
+  >
+    <van-button slot="button" size="small" type="primary" bindtap="produceID">
+      生成唯一ID
+    </van-button>
+  </van-field>
+  <van-dialog id="van-dialog" />
+
+</van-cell-group>
+
+</scroll-view>

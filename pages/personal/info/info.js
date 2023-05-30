@@ -6,7 +6,7 @@ Page({
     iconList: [{
       icon: 'unlock',
       color: 'brown',
-      name: '修改密码'
+      name: '修改个人信息'
     }, {
       icon: 'phone',
       color: 'cyan',
@@ -22,6 +22,15 @@ Page({
     }],
     gridCol:2,
     skin: false
+  },
+  modifyInfo(e){
+    let tap=e.currentTarget.dataset.tap;
+    if(tap==='修改个人信息'){
+      console.log(tap);
+      wx.navigateTo({
+        url: '/pages/personal/modifyInfo/modifyInfo',
+      })
+    }
   },
   showModal(e) {
     this.setData({

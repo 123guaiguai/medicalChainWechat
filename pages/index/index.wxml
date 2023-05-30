@@ -1,6 +1,7 @@
 <case wx:if="{{PageCur=='case'}}"></case>
 <register wx:if="{{PageCur=='register'}}"></register>
 <personal wx:if="{{PageCur=='personal'}}"></personal>
+<insurance wx:if="{{PageCur=='insurance'}}"></insurance>
 <scroll-view scroll-y class="scrollPage">
 
 <view class="cu-bar tabbar bg-white shadow foot">
@@ -9,6 +10,12 @@
       <image src="/images/tabbar/lsbl{{PageCur=='case'?'_cur':''}}.png"></image>
     </view>
     <view class="{{PageCur=='case'?'text-blue':'text-gray'}}">历史病历</view>
+  </view>
+  <view class="action" bindtap="NavChange" data-cur="insurance">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/insurance{{PageCur=='insurance'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='insurance'?'text-blue':'text-gray'}}">保险管理</view>
   </view>
   <view class="action" bindtap="NavChange" data-cur="register">
     <view class='cuIcon-cu-image'>
