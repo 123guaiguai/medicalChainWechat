@@ -1,6 +1,6 @@
 <scroll-view scroll-y class="scrollPage">
   <cu-custom bgColor="bg-gradual-blue">
-    <view slot="content">医链</view>
+    <view slot="content">医链网</view>
   </cu-custom>
   <view class="cu-card">
     <view class="cu-item bg-img shadow-blur" style="background-image:url({{item.img}})" bindtap="toChild" data-url="{{item.url}}" wx:for="{{list}}" wx:key>

@@ -44,3 +44,8 @@ map,.mapBox{
   width: 750rpx;
   height: 300rpx;
 }
+.itemContent{
+  display:flex;
+  flex-direction: row;
+  
+}

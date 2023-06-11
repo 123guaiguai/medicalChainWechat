@@ -6,9 +6,9 @@
   </cu-custom>
   <van-divider contentPosition="center" textColor="#1989fa" borderColor="#1989fa">基本信息</van-divider>
   <van-cell-group inset>
-    <van-field model:value="{{ name }}" required clearable label="姓名" icon="question-o" placeholder="请输入姓名" bind:click-icon="onClickIcon" clearable bindinput="changeInputField" data-inputType="name"/>
-    <van-field model:value="{{ identityID }}" required clearable label="身份证" placeholder="请输入身份证号" clearable bindinput="changeInputField" data-inputType="identityID"/>
-    <van-field model:value="{{ phone }}" required label="手机号" placeholder="请输入手机号" error-message="{{errorPhone}}" border="{{ false }}" clearable bind:blur="checkPhone" bindinput="changeInputField" data-inputType="phone"/>
+    <van-field model:value="{{ name }}" required clearable label="姓名" icon="question-o" placeholder="请输入姓名" bind:click-icon="onClickIcon" clearable bindinput="changeInputField" data-inputType="name" />
+    <van-field model:value="{{ identityID }}" required clearable label="身份证" placeholder="请输入身份证号" clearable bindinput="changeInputField" data-inputType="identityID" />
+    <van-field model:value="{{ phone }}" required label="手机号" placeholder="请输入手机号" error-message="{{errorPhone}}" border="{{ false }}" clearable bind:blur="checkPhone" bindinput="changeInputField" data-inputType="phone" />
   </van-cell-group>
   <van-divider contentPosition="center" textColor="#1989fa" borderColor="#1989fa">性别</van-divider>
   <van-radio-group value="{{ sexRadio }}" bind:change="changeSex">
@@ -24,28 +24,25 @@
   <van-divider contentPosition="center" textColor="#1989fa" borderColor="#1989fa">其他信息</van-divider>
   <van-cell-group inset>
     <van-field value="{{ fieldValue }}" is-link readonly label="地址" placeholder="请选择所在地区" bind:tap="showPop" />
+    <van-field value="{{ birthDay }}" is-link readonly label="出生日期" placeholder="请选择出生日期" bind:tap="showPopDate" />
   </van-cell-group>
 
   <van-popup show="{{ show }}" round position="bottom">
-    <van-area area-list="{{ areaList }}" bind:confirm="confirmArea" bind:cancel="cancelArea"/>
+    <van-area area-list="{{ areaList }}" bind:confirm="confirmArea" bind:cancel="cancelArea" />
+  </van-popup>
+  <van-popup show="{{ showDate }}" round position="bottom">
+    <van-datetime-picker type="date" value="{{ currentDate }}" bind:input="inputDate" min-date="{{ minDate }}" formatter="{{ formatter }}" bind:confirm="confirmDate" bind:cancel="cancelDate"/>
+
   </van-popup>
   <van-divider contentPosition="center" textColor="#1989fa" borderColor="#1989fa">生成唯一ID</van-divider>
   <van-cell-group inset>
-  <van-field
-    value="{{ uniqueId }}"
-    center
-    clearable
-    label="ID"
-    placeholder="用户唯一ID"
-    border="{{ false }}"
-    use-button-slot
-  >
-    <van-button slot="button" size="small" type="primary" bindtap="produceID">
-      生成唯一ID
-    </van-button>
-  </van-field>
-  <van-dialog id="van-dialog" />
+    <van-field value="{{ uniqueId }}" center clearable label="ID" placeholder="用户唯一ID" border="{{ false }}" use-button-slot>
+      <van-button slot="button" size="small" type="primary" bindtap="produceID">
+        生成唯一ID
+      </van-button>
+    </van-field>
+    <van-dialog id="van-dialog" />
 
-</van-cell-group>
+  </van-cell-group>
 
 </scroll-view>

@@ -10,7 +10,7 @@ Page({
   },
   onShareAppMessage() {
     return {
-      title: '医链1.0',
+      title: '医链网',
       imageUrl: '/images/share.jpg',
       path: '/pages/index/index'
     }

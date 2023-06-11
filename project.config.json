@@ -41,7 +41,7 @@
     "minifyWXSS": true
   },
   "compileType": "miniprogram",
-  "libVersion": "2.4.2",
+  "libVersion": "2.32.1",
   "appid": "wx0459994e33b9e039",
   "projectname": "MediChain",
   "simulatorType": "wechat",

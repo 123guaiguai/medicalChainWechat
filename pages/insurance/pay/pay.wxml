@@ -36,6 +36,7 @@
   </view>
   <view class="agree">
     <text class="read">阅读并同意 <text>《付款授权》 </text><text>《延续保障服务协议》 </text><text>《投保须知》 </text><text>《保险条款》 </text><text>《服务协议》 </text><text>《产品说明书》 </text><text>《客户告知书》 </text><text>《健康服务协议》 </text></text>
+    <text>同意保险公司获取加密后的历史病单信息</text>
     <text>同意协议并投保</text>
   </view>
 </scroll-view>

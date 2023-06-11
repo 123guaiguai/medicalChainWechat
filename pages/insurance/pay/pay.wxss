@@ -83,7 +83,14 @@
 .agree .read text {
   color: #1e89ec;
 }
-.agree > text:nth-child(2) {
+.agree>text:nth-child(2){
+  text-align: center;
+  padding:5px 0;
+  color:#db6019;
+  font-size: 17px;
+  font-weight: 700;
+}
+.agree > text:nth-child(3) {
   width: 80%;
   padding: 10px 0;
   background-color: #4093f3;

@@ -1,10 +1,13 @@
 const app = getApp();
+import Dialog from '@vant/weapp/dialog/dialog';
+
 Page({
   data: {
     StatusBar: app.globalData.StatusBar,
     CustomBar: app.globalData.CustomBar,
     ColorList: app.globalData.ColorList,    
-    loadProgress:0
+    loadProgress:0,
+    loadModal:false
   },
   isLoading (e) {
     this.setData({
@@ -36,6 +39,16 @@ Page({
     }
   },
   showModal(e) {
+    Dialog.confirm({
+      title: '确认销毁',
+      message: '保单销毁后不可恢复，确认销毁？',
+    })
+      .then(() => {
+        // on confirm
+      })
+      .catch(() => {
+        // on cancel
+      });
     this.setData({
       modalName: e.currentTarget.dataset.target
     })

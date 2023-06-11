@@ -1,5 +1,5 @@
 <case wx:if="{{PageCur=='case'}}"></case>
-<register wx:if="{{PageCur=='register'}}"></register>
+<!-- <register wx:if="{{PageCur=='register'}}"></register> -->
 <personal wx:if="{{PageCur=='personal'}}"></personal>
 <insurance wx:if="{{PageCur=='insurance'}}"></insurance>
 <scroll-view scroll-y class="scrollPage">
@@ -17,12 +17,12 @@
     </view>
     <view class="{{PageCur=='insurance'?'text-blue':'text-gray'}}">保险管理</view>
   </view>
-  <view class="action" bindtap="NavChange" data-cur="register">
+  <!-- <view class="action" bindtap="NavChange" data-cur="register">
     <view class='cuIcon-cu-image'>
       <image src="/images/tabbar/yygh{{PageCur=='register'?'_cur':''}}.png"></image>
     </view>
     <view class="{{PageCur=='register'?'text-blue':'text-gray'}}">预约挂号</view>
-  </view>
+  </view> -->
   <view class="action" bindtap="NavChange" data-cur="personal">
     <view class='cuIcon-cu-image'>
       <image src="/images/tabbar/grzx{{PageCur=='personal'?'_cur':''}}.png"></image>
